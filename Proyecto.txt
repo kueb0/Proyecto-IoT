@@ -1,0 +1,14 @@
+//Clase 6: ESP32 con NodeRed y MQTT.
+
+
+//Código para la subscripcion en Mosquitto
+
+mosquitto_sub -h broker.emqx.io -t tic/iot
+mosquitto_pub -h broker.emqx.io -t tic/iot -m "Soy Ricardo Juan Jesus Gloria Gloria"
+
+
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+https://dl.espressif.com/dl/package_esp32_index.json
+
+
+//Terminado...
