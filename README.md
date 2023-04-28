@@ -121,6 +121,6 @@
     <td> Freeware </td>
   </tr>
 </table>
-<img> ![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235035288-a0fa5930-e113-405a-8873-443444693591.png) </img>
-<img>![E](https://user-images.githubusercontent.com/108686186/235035348-3979764d-f9de-4470-b53f-8da2b792ba7a.jpg) </img>
+<img src = "![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235035288-a0fa5930-e113-405a-8873-443444693591.png)" alt = "Mi imagen">
+<img> ![E](https://user-images.githubusercontent.com/108686186/235035348-3979764d-f9de-4470-b53f-8da2b792ba7a.jpg) </img>
 
