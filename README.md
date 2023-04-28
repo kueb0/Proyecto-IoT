@@ -151,10 +151,48 @@
 </table>
 <h2> Epicas del proyecto (minimo debe haber una épica por integrante de equipo) </h2>
 <lu>
-  <li> Yo como usuario quiero conocer a que distancia se encuentra un objeto y tener un monitoreo de ello </li>
-  <li> Yo como usuario quiero conocer a que temperatura y humedad esta a mi alrededor y tener un monitoreo de ello </li>
-  <li> Yo como usuario quiero conocer los datos arrojados anteriormete y este se envie a una mensajeria de mi dispositvo movil mediante presionando un botón </li>
+  <li> Yo como usuario quiero conocer a que distancia se encuentra un objeto y tener un monitoreo de ello y se guarde en una base de datos </li>
+  <li> Yo como usuario quiero conocer a que temperatura y humedad esta a mi alrededor y tener un monitoreo de ello y se guarde en una base de datos </li>
+  <li> Yo como usuario quiero conocer los datos arrojados anteriormete y este se envie a una mensajeria de mi dispositvo movil mediante un botón </li>
 </lu>
+<h2> Tabla de historia de usuario </h2>
+<table>
+  <tr>
+    <th> ID </th>
+    <th> Historia de Usuario </th>
+    <th> Prioridad </th>
+    <th> Estimación </th>
+    <th> Como probarlo </th>
+    <th> Responsable </th>
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> Control y monitoreo de de la distancia de un objeto y dependiendo la distancia se escuche un sonido </td>
+    <td> Alta </td>
+    <td> 1 semana </td>
+    <td> Ejecución del código, alojamineto en la base de datos y monitoreo </td>
+    <td> Ricardo Gloria </td>
+  </tr>
+  <tr>
+    <td> 2 </td>
+    <td> Control y monitoreo de la temperatura y humedad del alrededor y dependiendo de la temperatura se mueva un motor </td>
+    <td> Alta </td>
+    <td> 1 semana </td>
+    <td> Ejecución del código, alojamineto en la base de datos y monitoreo </td>
+    <td> Sandra Álvarez </td>
+  </tr>
+  <tr>
+    <td> 3 </td>
+    <td> Envio de datos a una mensajeria del dispositivo móvil mediante un botón fisico y virtual </td>
+    <td> Alta </td>
+    <td> 1 Semana </td>
+    <td> Ejecución del código y monitoreo </td>
+    <td> Integrantes del equipo </td>
+  </tr>
+</table>
+<h2> Borrador del Prototipo </h2>
+<h2> Prototipo terminado </h2>
+
 
 
 
