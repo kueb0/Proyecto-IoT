@@ -122,6 +122,7 @@
   </tr>
 </table>
 
-<img src = "![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235035288-a0fa5930-e113-405a-8873-443444693591.png)">
+![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235036054-56078c03-3bdf-4ebe-af8e-0b0b181590bd.png)
+
 
 
