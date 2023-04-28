@@ -142,14 +142,19 @@
   </tr>
   <tr>
     <td> 9 </td>
-    <td> Actuador Micro Servomotor </td>
-    <td> Es un tipo de motor eléctrico que se utiliza en proyectos electrónicos con placas de prototipos </td>
-    <td> <img src = "https://user-images.githubusercontent.com/108686186/235043404-8d589658-dcb5-488d-b2ee-864b462c1ac8.jpg" width = "100" height = "100"> </td>
+    <td> Protoboard </td>
+    <td> Es una herramienta de prototipado electrónico que se utiliza para construir y probar circuitos electrónicos temporales sin necesidad de soldar los componentes. </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235044173-106f019f-caa5-4363-af93-dc1fa071c099.jpg" width = "100" height = "100"> </td>
     <td> 1 </td>
-    <td> $50 </td>
+    <td> $120 </td>
   </tr>
 </table>
-
+<h2> Epicas del proyecto (minimo debe haber una épica por integrante de equipo) </h2>
+<lu>
+  <li> Yo como usuario quiero conocer a que distancia se encuentra un objeto y tener un monitoreo de ello </li>
+  <li> Yo como usuario quiero conocer a que temperatura y humedad esta a mi alrededor y tener un monitoreo de ello </li>
+  <li> Yo como usuario quiero conocer los datos arrojados anteriormete y este se envie a una mensajeria de mi dispositvo movil mediante presionando un botón </li>
+</lu>
 
 
 
