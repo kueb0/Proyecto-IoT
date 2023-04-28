@@ -13,7 +13,21 @@
   <li> Recopilar y analizar datos en tiempo real </li>
   <li> Interpretar esquemas electricos y realizar el montaje </li>
   <li> Ahorrar tiempo al consumidor </li>
+  <li> Conocer y utilizar códigos y monitoreo con las herramientas correspondientes </li>
 </ol>
-
-<img>![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235030487-f1383cbb-a049-43f1-84b0-1fa039633540.png) </img>
+<h2> Tabla de Software Utilizado </h2>
+<table>
+  <tr>
+    <th> ID </th>
+    <th> Software </th>
+    <th> Version </th>
+    <th> tipo </th>
+  </tr>
+  <tr>
+    <td> 1 </th>
+    <td> Arduino IDE </th>
+    <td> 2.0.0 </th>
+    <td> Freeware </th>
+  </tr>
+</table>
 
