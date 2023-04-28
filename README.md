@@ -1,6 +1,6 @@
 # Proyecto-IoT
 <h1> ENVIO DE DATOS EN TIEMPO REAL </h1>.
-<font size = "20"> Proyecto de Aplicaciones de IoT. Unidad 3 - GDS0451 </font>
+<font size = "4"> Proyecto de Aplicaciones de IoT. Unidad 3 - GDS0451 </font>
 <h2> Integrantes </h2>
 <lu>
   <li> Sandra Karina Álvarez González </li>
