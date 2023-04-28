@@ -195,6 +195,10 @@
 <img src = "https://user-images.githubusercontent.com/108686186/235048159-cca89cd3-6f0b-494f-9cb9-c9f7c3dac230.jpeg">
 <img src = "https://user-images.githubusercontent.com/108686186/235048202-677ade82-c867-452e-b8b1-2d283f77f9a4.jpeg">
 <h2> Dashboard </h2>
+<img src = "https://user-images.githubusercontent.com/108686186/235048452-184b3b0f-ac48-4331-9afd-d45c01e7dbda.png">
+<img src = "https://user-images.githubusercontent.com/108686186/235048511-ae6a7ef5-c8be-430f-b1da-0c2039f165db.png">
+<img src = "https://user-images.githubusercontent.com/108686186/235048561-d7708e4c-099c-4cfe-b1e7-0c8fe574fb52.png">
+<img src = "https://user-images.githubusercontent.com/108686186/235048619-31cdfb62-385d-4504-b20d-f557e8dabff2.png">
 <h2> Base de Datos </h2>
 <h2> Diagrama Fritzing </h2>
 <h2> Demostración Video </h2>
