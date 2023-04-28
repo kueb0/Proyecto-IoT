@@ -86,9 +86,11 @@
   </tr>
   <tr>
     <td> 2 </td>
-    <td> Node-Red </td>
-    <td> 3.0.2 </td>
-    <td> Freeware </td>
+    <td> Raspberry </td>
+    <td> Es una serie de ordenadores monoplaca u ordenadores de placa simple de bajo costo y de alto rendimiento </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235040540-4247815e-311b-4bc6-899e-e2fbe1627b62.jpeg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $2750 </td>
   </tr>
   <tr>
     <td> 3 </td>
