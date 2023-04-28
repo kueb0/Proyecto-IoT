@@ -123,7 +123,7 @@
 </table>
 
 
-![E](https://user-images.githubusercontent.com/108686186/235038025-df676fa7-706a-44ab-aaa0-5500a5bf7ceb.jpg)
+<img ![E](https://user-images.githubusercontent.com/108686186/235038025-df676fa7-706a-44ab-aaa0-5500a5bf7ceb.jpg) width = "50" height = "50">
 
 
 
