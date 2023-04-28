@@ -24,10 +24,30 @@
     <th> tipo </th>
   </tr>
   <tr>
-    <td> 1 </th>
-    <td> Arduino IDE </th>
-    <td> 2.0.0 </th>
-    <td> Freeware </th>
+    <td> 1 </td>
+    <td> Arduino IDE </td>
+    <td> 2.0.0 </td>
+    <td> Freeware </td>
+  </tr>
+    <td> 2 </td>
+    <td> Node-Red </td>
+    <td> 3.0.2 </td>
+    <td> Freeware </td>
+  </tr>
+    <td> 3 </td>
+    <td> Node.JS </td>
+    <td> 18.14.2 </td>
+    <td> Freeware </td>
+  </tr>
+    <td> 4 </td>
+    <td> MongoDB </td>
+    <td> 6.0.4 </td>
+    <td> Freeware </td>
+  <tr>
+    <td> 5 </td>
+    <td> MySQL </td>
+    <td> 8.0.32 </td>
+    <td> Freeware </td>
   </tr>
 </table>
 
