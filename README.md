@@ -94,9 +94,11 @@
   </tr>
   <tr>
     <td> 3 </td>
-    <td> Node.JS </td>
-    <td> 18.14.2 </td>
-    <td> Freeware </td>
+    <td> Ultrasonico (HC - SR04) </td>
+    <td> Es un sensor de distancia de bajo costo que utiliza ultrasonido para determinar la distancia de un objeto en un rango de 2 a 450 cm. </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235041170-c8e49419-6ca7-4f3e-929a-961c38dcfe72.jpg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $60 </td>
   </tr>
   <tr>
     <td> 4 </td>
