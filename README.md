@@ -123,7 +123,7 @@
 </table>
 
 
-![Captura de pantalla (801)](https://user-images.githubusercontent.com/108686186/235037951-794f1ba0-2dfb-45df-889d-bd0280087490.png)
+![E](https://user-images.githubusercontent.com/108686186/235038025-df676fa7-706a-44ab-aaa0-5500a5bf7ceb.jpg)
 
 
 
