@@ -80,7 +80,7 @@
     <td> 1 </td>
     <td> ESP32 </td>
     <td> Microcontrolador de bajo costo y bajo consumo de energia diseñado para IoT y conectividad inalámbrica </td>
-    <td> ![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235036826-eb28d5ad-c5c5-40f2-b9d4-aabf972aed87.png) </td>
+    <td>  </td>
     <td> 1 </td>
     <td> $150 </td>
   </tr>
@@ -122,7 +122,7 @@
   </tr>
 </table>
 
-<img src = ![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235036826-eb28d5ad-c5c5-40f2-b9d4-aabf972aed87.png) width = "100" height = "100"> 
+<img src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.mx%2FMLM-736691552-modulo-esp32-wifi-bluetooth-nodemcu-esp8266-arduino-esp-32-p-_JM&psig=AOvVaw0PPZCbJEf2afKSliYbwo5u&ust=1682732900354000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiR39m6y_4CFQAAAAAdAAAAABAE" width = "100" height = "100"> 
 
 
 
