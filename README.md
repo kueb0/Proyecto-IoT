@@ -6,9 +6,9 @@
   <li> Sandra Karina Álvarez González </li>
   <li> Ricardo Juan Jesus Gloria Gloria </li>
 </lu>
-<h2> Objetivos general </h2>
+<h2> Objetivo General </h2>
 <p> Como objetivo general de este proyecto es mandar datos a tiempo real de lo que esta pasando a tu alrededor. Es decir, para poder tener un monitoreo de lo que esta pasando </p> 
-<h2> Objetivos especificos </h2>
+<h2> Objetivos Especificos </h2>
 <ol>
   <li> Recopilar y analizar datos en tiempo real </li>
   <li> Interpretar esquemas electricos y realizar el montaje </li>
@@ -149,13 +149,13 @@
     <td> $120 </td>
   </tr>
 </table>
-<h2> Epicas del proyecto (minimo debe haber una épica por integrante de equipo) </h2>
+<h2> Epicas del Proyecto (minimo debe haber una épica por integrante de equipo) </h2>
 <lu>
   <li> Yo como usuario quiero conocer a que distancia se encuentra un objeto y tener un monitoreo de ello y se guarde en una base de datos </li>
   <li> Yo como usuario quiero conocer a que temperatura y humedad esta a mi alrededor y tener un monitoreo de ello y se guarde en una base de datos </li>
   <li> Yo como usuario quiero conocer los datos arrojados anteriormete y este se envie a una mensajeria de mi dispositvo movil mediante un botón </li>
 </lu>
-<h2> Tabla de historia de usuario </h2>
+<h2> Tabla de Historia de Usuario </h2>
 <table>
   <tr>
     <th> ID </th>
@@ -191,7 +191,13 @@
   </tr>
 </table>
 <h2> Borrador del Prototipo </h2>
-<h2> Prototipo terminado </h2>
+<h2> Prototipo Terminado </h2>
+<img src = "https://user-images.githubusercontent.com/108686186/235048159-cca89cd3-6f0b-494f-9cb9-c9f7c3dac230.jpeg">
+<img src = "https://user-images.githubusercontent.com/108686186/235048202-677ade82-c867-452e-b8b1-2d283f77f9a4.jpeg">
+<h2> Dashboard </h2>
+<h2> Base de Datos </h2>
+<h2> Diagrama Fritzing </h2>
+<h2> Demostración Video </h2>
 
 
 
