@@ -122,7 +122,8 @@
   </tr>
 </table>
 
-<img src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Farticulo.mercadolibre.com.mx%2FMLM-736691552-modulo-esp32-wifi-bluetooth-nodemcu-esp8266-arduino-esp-32-p-_JM&psig=AOvVaw0PPZCbJEf2afKSliYbwo5u&ust=1682732900354000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKiR39m6y_4CFQAAAAAdAAAAABAE" width = "100" height = "100"> 
+
+![Captura de pantalla (801)](https://user-images.githubusercontent.com/108686186/235037951-794f1ba0-2dfb-45df-889d-bd0280087490.png)
 
 
 
