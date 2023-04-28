@@ -80,7 +80,7 @@
     <td> 1 </td>
     <td> ESP32 </td>
     <td> Microcontrolador de bajo costo y bajo consumo de energia diseñado para IoT y conectividad inalámbrica </td>
-    <td>  </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235038025-df676fa7-706a-44ab-aaa0-5500a5bf7ceb.jpg" width = "100" height = "100"> </td>
     <td> 1 </td>
     <td> $150 </td>
   </tr>
@@ -122,8 +122,6 @@
   </tr>
 </table>
 
-
-<img src = "https://user-images.githubusercontent.com/108686186/235038025-df676fa7-706a-44ab-aaa0-5500a5bf7ceb.jpg" width = "50" height = "50">
 
 
 
