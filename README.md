@@ -66,4 +66,59 @@
     <td> Freeware </td>
   </tr>
 </table>
+<h2> Tabla de Hardware Utilizado </h2>
+<table>
+  <tr>
+    <th> ID </th>
+    <th> Componente </th>
+    <th> Descripción </th>
+    <th> Imagen </th>
+    <th> Cantidad </th>
+    <th> Costo total </th>
+  </tr>
+  <tr>
+    <td> 1 </td>
+    <td> ESP32 </td>
+    <td> Microcontrolador de bajo costo y bajo consumo de energia diseñado para IoT y conectividad inalámbrica </td>
+    <td> <img> ![image](https://user-images.githubusercontent.com/108686186/235034975-4b15f32a-5b10-4ff2-a94b-c150e05c285a.png) </img> </td>
+    <td> 1 </td>
+    <td> $150 </td>
+  </tr>
+  <tr>
+    <td> 2 </td>
+    <td> Node-Red </td>
+    <td> 3.0.2 </td>
+    <td> Freeware </td>
+  </tr>
+  <tr>
+    <td> 3 </td>
+    <td> Node.JS </td>
+    <td> 18.14.2 </td>
+    <td> Freeware </td>
+  </tr>
+  <tr>
+    <td> 4 </td>
+    <td> MongoDB </td>
+    <td> 6.0.4 </td>
+    <td> Freeware </td>
+  </tr>
+  <tr>
+    <td> 5 </td>
+    <td> MySQL </td>
+    <td> 8.0.32 </td>
+    <td> Freeware </td>
+  </tr>
+  <tr>
+    <td> 6 </td>
+    <td> Mosquitto </td>
+    <td> 2.0.15 </td>
+    <td> Freeware </td>
+  </tr>
+  <tr>
+    <td> 7 </td>
+    <td> WhatsApp </td>
+    <td> 2.23.7 </td>
+    <td> Freeware </td>
+  </tr>
+</table>
 
