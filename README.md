@@ -191,7 +191,7 @@
   </tr>
 </table>
 <h2> Borrador del Prototipo </h2>
-<img src = "https://user-images.githubusercontent.com/108686186/235080208-9d205c86-7def-46d3-855d-4f37fe91d2be.png"
+<img src = "https://user-images.githubusercontent.com/108686186/235082941-ce02dbdc-ff03-4051-82c8-c44c34d2a589.png"
 <h2> Prototipo Terminado </h2>
 <img src = "https://user-images.githubusercontent.com/108686186/235048159-cca89cd3-6f0b-494f-9cb9-c9f7c3dac230.jpeg">
 <img src = "https://user-images.githubusercontent.com/108686186/235048202-677ade82-c867-452e-b8b1-2d283f77f9a4.jpeg">
