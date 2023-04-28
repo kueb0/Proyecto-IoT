@@ -110,15 +110,19 @@
   </tr>
   <tr>
     <td> 5 </td>
-    <td> MySQL </td>
-    <td> 8.0.32 </td>
-    <td> Freeware </td>
+    <td> Sensor Push Button (KY-004) </td>
+    <td> Es un interruptor de botón momentáneo utilizado en proyectos electrónicos con placas de prototipos  </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235042227-c68c08f0-c0dc-4d89-bb68-4dae3fbc9fbc.jpg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $20 </td>
   </tr>
   <tr>
     <td> 6 </td>
-    <td> Mosquitto </td>
-    <td> 2.0.15 </td>
-    <td> Freeware </td>
+    <td> Actuador LED </td>
+    <td> Es un componente electrónico que emite luz cuando se aplica una corriente eléctrica.  </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235042596-9360941a-9bbb-47c7-bfb1-3b395a5d7e2f.jpg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $10 </td>
   </tr>
   <tr>
     <td> 7 </td>
