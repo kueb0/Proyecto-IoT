@@ -205,6 +205,7 @@
 <img src = "https://user-images.githubusercontent.com/108686186/235048561-d7708e4c-099c-4cfe-b1e7-0c8fe574fb52.png">
 <img src = "https://user-images.githubusercontent.com/108686186/235049156-6aa7b282-428b-4266-8a24-c5c8d28d9520.jpeg">
 <h2> Diagrama Fritzing </h2>
+<img src = "https://user-images.githubusercontent.com/108686186/235064440-9e607e63-5cf2-432c-86d2-1382dd78547e.png">
 <h2> Demostración Video </h2>
 <p> https://drive.google.com/file/d/1cmrmse6i66KkSKk0SwStABA9Jnirf9NO/view?usp=sharing </p>
 
