@@ -122,7 +122,7 @@
   </tr>
 </table>
 
-<img ![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235036826-eb28d5ad-c5c5-40f2-b9d4-aabf972aed87.png) width = "50" height = "50"> 
+<img> ![Captura de pantalla (798)](https://user-images.githubusercontent.com/108686186/235036826-eb28d5ad-c5c5-40f2-b9d4-aabf972aed87.png) </img>
 
 
 
