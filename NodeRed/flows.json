@@ -1,0 +1,810 @@
+[
+    {
+        "id": "07b88c9f2b7f9748",
+        "type": "tab",
+        "label": "Proyecto",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "072e166bebc2f535",
+        "type": "ui_button",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "group": "71c5c176d2e201c0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Enviar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "pink",
+        "className": "",
+        "icon": "",
+        "payload": "E",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 60,
+        "wires": [
+            [
+                "3ca8eef24ccb47fc"
+            ]
+        ]
+    },
+    {
+        "id": "3ca8eef24ccb47fc",
+        "type": "mqtt out",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "topic": "tic/iot",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c9da094135f86a9a",
+        "x": 410,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "fea2bb2dbbf7728a",
+        "type": "inject",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 60,
+        "wires": [
+            [
+                "072e166bebc2f535",
+                "4750d24baac19dcc"
+            ]
+        ]
+    },
+    {
+        "id": "a3f14baf9e918b77",
+        "type": "mqtt in",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "topic": "tic/iot",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c9da094135f86a9a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 200,
+        "wires": [
+            [
+                "5cbbaa94fd92415a",
+                "c0ced365cf6f652a",
+                "14234f5ec1e6d158",
+                "e311e26acf721929"
+            ]
+        ]
+    },
+    {
+        "id": "5cbbaa94fd92415a",
+        "type": "debug",
+        "z": "07b88c9f2b7f9748",
+        "name": "MQTT",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 260,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "936fb8f5d6c623da",
+        "type": "ui_gauge",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "group": "86afea7b068ad5ec",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#006eb4",
+            "#00b400",
+            "#ca3838"
+        ],
+        "seg1": "15",
+        "seg2": "30",
+        "className": "",
+        "x": 470,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c0ced365cf6f652a",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Temperatura",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nmsg.payload = msg.payload[0];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 200,
+        "wires": [
+            [
+                "936fb8f5d6c623da",
+                "0cc1e380948eeb2b",
+                "f08d225e96d828c3",
+                "97311483efb2191b"
+            ]
+        ]
+    },
+    {
+        "id": "eefa6e88904b7f07",
+        "type": "ui_gauge",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "group": "86afea7b068ad5ec",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humedad",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b400",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "30",
+        "seg2": "70",
+        "className": "",
+        "x": 440,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "14234f5ec1e6d158",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Humedad",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\")\nmsg.payload = msg.payload[1];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "eefa6e88904b7f07",
+                "a0465c5a647aa4dc",
+                "65101a82a63ae0d3"
+            ]
+        ]
+    },
+    {
+        "id": "4bb47a779e977767",
+        "type": "ui_text",
+        "z": "07b88c9f2b7f9748",
+        "group": "86afea7b068ad5ec",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Modo: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 610,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0cc1e380948eeb2b",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Texto",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar data = msg.payload = msg.payload[0];\n\nif (data >= 30 && data <= 45) {\n    msg.payload = (\"Caliente\");\n}\n\nif (data > 15 && data < 30) {\n    msg.payload = (\"Normal\");\n}\n\nif (data >= 0 && data <= 15) {\n    msg.payload = (\"Frio\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "4bb47a779e977767"
+            ]
+        ]
+    },
+    {
+        "id": "f08d225e96d828c3",
+        "type": "mongodb out",
+        "z": "07b88c9f2b7f9748",
+        "mongodb": "6fa3d71a1041dc4f",
+        "name": "Temperatura",
+        "collection": "temperatura",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 670,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a0465c5a647aa4dc",
+        "type": "mongodb out",
+        "z": "07b88c9f2b7f9748",
+        "mongodb": "6fa3d71a1041dc4f",
+        "name": "Humedad",
+        "collection": "humedad",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 620,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4750d24baac19dcc",
+        "type": "ui_text",
+        "z": "07b88c9f2b7f9748",
+        "group": "71c5c176d2e201c0",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "name": "",
+        "label": "Enviar Datos",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 270,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9c2392387a8c3c0a",
+        "type": "ui_worldmap",
+        "z": "07b88c9f2b7f9748",
+        "group": "edb7fce67c045e43",
+        "order": 0,
+        "width": "6",
+        "height": "6",
+        "name": "",
+        "lat": "{{msg.latitude}}",
+        "lon": "{{msg.longitude}}",
+        "zoom": "",
+        "layer": "OSMC",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "layers": "hide",
+        "panit": "false",
+        "panlock": "true",
+        "zoomlock": "true",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "showruler": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,BU,RW,SN,AC,TL,HM",
+        "maplist": "OSMG,OSMC,OSMH,EsriC,EsriS,EsriT,EsriO,EsriDG,NatGeo",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 460,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "08e1f9a81780e046",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Latitud",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar lat = msg.payload = msg.payload[5];\n\nmsg.latitude = lat;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 250,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "94651fd37131fcd5",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Longitud",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\")\nvar lon = msg.payload = msg.payload[5];\n\nmsg.longitude = lon;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d669b91cb0833a0c",
+        "type": "mongodb out",
+        "z": "07b88c9f2b7f9748",
+        "mongodb": "6fa3d71a1041dc4f",
+        "name": "Latitud",
+        "collection": "latitud",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 590,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "72e0c8dbe3501b2e",
+        "type": "mongodb out",
+        "z": "07b88c9f2b7f9748",
+        "mongodb": "6fa3d71a1041dc4f",
+        "name": "Longitud",
+        "collection": "longitud",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 620,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "4a6e18169b18d445",
+        "type": "ui_text",
+        "z": "07b88c9f2b7f9748",
+        "group": "edb7fce67c045e43",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Longitd: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 440,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8e867083e93227b3",
+        "type": "mysql",
+        "z": "07b88c9f2b7f9748",
+        "mydb": "f39d9a356bf4f254",
+        "name": "Temperatura",
+        "x": 1090,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "559314878eac5606",
+        "type": "mysql",
+        "z": "07b88c9f2b7f9748",
+        "mydb": "f39d9a356bf4f254",
+        "name": "Humedad",
+        "x": 1000,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f020c62d86632478",
+        "type": "mysql",
+        "z": "07b88c9f2b7f9748",
+        "mydb": "f39d9a356bf4f254",
+        "name": "Latitud",
+        "x": 930,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9508ea75c701afec",
+        "type": "mysql",
+        "z": "07b88c9f2b7f9748",
+        "mydb": "f39d9a356bf4f254",
+        "name": "Longitud",
+        "x": 1000,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97311483efb2191b",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Temperatura 2",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar temp = msg.payload = msg.payload[0];\n\nmsg.topic = \"INSERT INTO `Temperatura`(`temperatura`) VALUES (\" + temp + \")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 200,
+        "wires": [
+            [
+                "8e867083e93227b3"
+            ]
+        ]
+    },
+    {
+        "id": "65101a82a63ae0d3",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Humedad 2",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar humi = msg.payload = msg.payload[0];\n\nmsg.topic = \"INSERT INTO `Humedad`(`humedad`) VALUES (\" + humi + \")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 260,
+        "wires": [
+            [
+                "559314878eac5606"
+            ]
+        ]
+    },
+    {
+        "id": "0babd675603a2def",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Latitud 2",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar flat = msg.payload = msg.payload[0];\n\nmsg.topic = \"INSERT INTO `Latitud`(`latitud`) VALUES (\" + flat + \")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ade6bd8fcfdf2421",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Longitud 2",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar flon = msg.payload = msg.payload[0];\n\nmsg.topic = \"INSERT INTO `Longitud`(`longitud`) VALUES (\" + flon + \")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e311e26acf721929",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Distancia",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\")\nmsg.payload = msg.payload[2];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 500,
+        "wires": [
+            [
+                "e51eedd5c099d1b4",
+                "d26dfb11d9c0085b",
+                "35d60b8f9092e7b6",
+                "cadddc820fa8f43e"
+            ]
+        ]
+    },
+    {
+        "id": "cadddc820fa8f43e",
+        "type": "mongodb out",
+        "z": "07b88c9f2b7f9748",
+        "mongodb": "6fa3d71a1041dc4f",
+        "name": "Distancia",
+        "collection": "distancia",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "insert",
+        "x": 620,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e51eedd5c099d1b4",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Distancia 2",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar d = msg.payload = msg.payload[0];\n\nmsg.topic = \"INSERT INTO `Distancia`(`distancia`) VALUES (\" + d + \")\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 500,
+        "wires": [
+            [
+                "d96083403406e71c"
+            ]
+        ]
+    },
+    {
+        "id": "d96083403406e71c",
+        "type": "mysql",
+        "z": "07b88c9f2b7f9748",
+        "mydb": "f39d9a356bf4f254",
+        "name": "Distancia",
+        "x": 1000,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d26dfb11d9c0085b",
+        "type": "ui_chart",
+        "z": "07b88c9f2b7f9748",
+        "name": "",
+        "group": "982a2381c4c6e00f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Distancia",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 440,
+        "y": 500,
+        "wires": [
+            [
+                "cadddc820fa8f43e"
+            ]
+        ]
+    },
+    {
+        "id": "734aa7a8cd86dd06",
+        "type": "ui_text",
+        "z": "07b88c9f2b7f9748",
+        "group": "982a2381c4c6e00f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "text-center",
+        "x": 610,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "35d60b8f9092e7b6",
+        "type": "function",
+        "z": "07b88c9f2b7f9748",
+        "name": "Texto",
+        "func": "msg.payload = msg.payload.toString();\nmsg.payload = msg.payload.split(\",\");\nvar d = msg.payload = msg.payload[0];\n\nmsg.payload = \"El obejto esta a \" + d + \" cm de distancia\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 560,
+        "wires": [
+            [
+                "734aa7a8cd86dd06"
+            ]
+        ]
+    },
+    {
+        "id": "8b2b3bb9b6bb67ac",
+        "type": "ui_text",
+        "z": "07b88c9f2b7f9748",
+        "group": "edb7fce67c045e43",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Latitud:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 415,
+        "y": 321,
+        "wires": []
+    },
+    {
+        "id": "71c5c176d2e201c0",
+        "type": "ui_group",
+        "name": "Botón",
+        "tab": "b649efc76bc81b78",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c9da094135f86a9a",
+        "type": "mqtt-broker",
+        "name": "Broker Publico",
+        "broker": "broker.emqx.io",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "86afea7b068ad5ec",
+        "type": "ui_group",
+        "name": "Sensor Temperatura y Humedad",
+        "tab": "b649efc76bc81b78",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6fa3d71a1041dc4f",
+        "type": "mongodb",
+        "hostname": "127.0.0.1",
+        "topology": "direct",
+        "connectOptions": "",
+        "port": "27017",
+        "db": "IOT",
+        "name": "prueba"
+    },
+    {
+        "id": "edb7fce67c045e43",
+        "type": "ui_group",
+        "name": "Mapa",
+        "tab": "b649efc76bc81b78",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f39d9a356bf4f254",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "db": "aiot",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "982a2381c4c6e00f",
+        "type": "ui_group",
+        "name": "Ultrasonico",
+        "tab": "b649efc76bc81b78",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b649efc76bc81b78",
+        "type": "ui_tab",
+        "name": "Proyecto",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
