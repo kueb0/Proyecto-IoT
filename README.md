@@ -94,7 +94,7 @@
   </tr>
   <tr>
     <td> 3 </td>
-    <td> Ultrasonico (HC - SR04) </td>
+    <td> Sensor Ultrasonico (HC - SR04) </td>
     <td> Es un sensor de distancia de bajo costo que utiliza ultrasonido para determinar la distancia de un objeto en un rango de 2 a 450 cm. </td>
     <td> <img src = "https://user-images.githubusercontent.com/108686186/235041170-c8e49419-6ca7-4f3e-929a-961c38dcfe72.jpg" width = "100" height = "100"> </td>
     <td> 1 </td>
@@ -102,9 +102,11 @@
   </tr>
   <tr>
     <td> 4 </td>
-    <td> MongoDB </td>
-    <td> 6.0.4 </td>
-    <td> Freeware </td>
+    <td> Sensor Temperatura y Humedad (DHT22) </td>
+    <td> Es un sensor digital de temperatura y humedad relativa de buen rendimiento y bajo costo </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235041691-7f9aef71-4dfc-49e0-b1cc-a839ef3e0bad.jpg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $114 </td>
   </tr>
   <tr>
     <td> 5 </td>
