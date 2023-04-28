@@ -126,9 +126,27 @@
   </tr>
   <tr>
     <td> 7 </td>
-    <td> WhatsApp </td>
-    <td> 2.23.7 </td>
-    <td> Freeware </td>
+    <td> Actuador Micro Servomotor </td>
+    <td> Es un tipo de motor eléctrico que se utiliza en proyectos electrónicos con placas de prototipos </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235043404-8d589658-dcb5-488d-b2ee-864b462c1ac8.jpg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $50 </td>
+  </tr>
+  <tr>
+    <td> 8 </td>
+    <td> Actuador Buzzer </td>
+    <td> Es un dispositivo que produce sonidos y alertas audibles en respuesta a una señal eléctrica. </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235043651-2fb49b85-1d85-4b79-bfa4-d9aa19b04499.png" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $30 </td>
+  </tr>
+  <tr>
+    <td> 9 </td>
+    <td> Actuador Micro Servomotor </td>
+    <td> Es un tipo de motor eléctrico que se utiliza en proyectos electrónicos con placas de prototipos </td>
+    <td> <img src = "https://user-images.githubusercontent.com/108686186/235043404-8d589658-dcb5-488d-b2ee-864b462c1ac8.jpg" width = "100" height = "100"> </td>
+    <td> 1 </td>
+    <td> $50 </td>
   </tr>
 </table>
 
